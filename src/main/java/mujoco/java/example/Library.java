@@ -3,8 +3,11 @@
  */
 package mujoco.java.example;
 
+import org.mujoco.MuJoCoLib;
+
 public class Library {
     public boolean someLibraryMethod() {
+    	System.out.println("Starting "+MuJoCoLib.mj_versionString().getString());
         return true;
     }
 }
